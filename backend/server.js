@@ -15,9 +15,12 @@ connectDB()
 connectCloudinary()
 
 // middlewares
-app.use(express.json())
+app.use(express.json({ limit:"10mb"}))
 app.use(cors(
-    // origin = ""
+    {
+        origin: "https://kalkai-furnitures-project-done-frontend.vercel.app/", 
+        credentials: true 
+    }
 ))
 
 // api endpoints
