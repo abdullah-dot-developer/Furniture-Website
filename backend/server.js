@@ -18,7 +18,7 @@ connectCloudinary()
 app.use(express.json({ limit:"10mb"}))
 app.use(cors(
     {
-        origin: "https://kalkai-furnitures-project-done-frontend.vercel.app/", 
+        origin: "https://kalkai-furnitures-project-done-frontend.vercel.app", 
         credentials: true 
     }
 ))
